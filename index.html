@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To do List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <input type="text" id="input-new-task" placeholder="New task">
+      <button id="btn-new-task">
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+    <ul id="task-list">
+    </ul>
+  </div>
+  <div id="edit-window">
+    <button id="btn-edit-close">
+      <i class="fa fa-remove"></i>
+    </button>
+    <h2 id="id">#1001</h2>
+    <hr>
+    <form>
+      <div class="frm-line">
+        <label for="name">New name:</label>
+        <input type="text" id="input-edit-window">
+      </div>
+      <div class="frm-line">
+        <button id="btn-update-task">
+          <i class="fa fa-save"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+  <div id="bg-edit-window"></div>
+  <script src="main.js"></script>
+</body>
+</html>

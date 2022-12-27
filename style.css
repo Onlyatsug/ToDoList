@@ -1,0 +1,148 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #eee;
+  background-color: #111;
+} 
+.container{
+  width: 320px;
+  padding: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  background-color: #222;
+}
+.header{
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.header #input-new-task{
+  color: #eee;
+  font-size: 1.1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #111;
+}
+.header #input-new-task:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.header #btn-new-task{
+  color: white;
+  border-radius: 6px;
+  padding: 10px 14px;
+  border: none;
+  background-color: #111;
+}
+.header #btn-new-task i:active{
+  -webkit-transform: scale(1.4);
+}
+#task-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#task-list li{
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+}
+.btn-action {
+  color: white;
+  margin-left: 16px;
+  padding: 6px 8px;
+  border: none;
+  background-color: #111;
+}
+.btn-action:active{
+  -webkit-transform: scale(1.4);
+}
+#edit-window{
+  z-index: 100;
+  position: fixed;
+  left: 50;
+  right: 50;
+  transform: translate(0%, 100%);
+  padding: 20px;
+  background-color: #222;
+  border-radius: 6px;
+  display: none;
+}
+#edit-window.open{
+  display: block !important;
+}
+#edit-window h2{
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+#edit-window hr{
+  border: 1px solid #666;
+  background-color: #666;
+  margin-bottom: 30px;
+}
+#btn-edit-close{
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 14px;
+  border: 2px solid #777;
+  background-color: #111;
+}
+#btn-edit-close:active{
+  -webkit-transform: scale(1.4);
+}
+.frm-line label{
+  font-size: 1.1rem;
+}
+.frm-line input{
+  color: #eee;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #111;
+  display: block;
+}
+.frm-line input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+#btn-update-task{
+  float: right;
+  color: #eee;
+  padding: 12px 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #111;
+}
+#bg-edit-window{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 50;
+  display: none;
+}
+#bg-edit-window.open{
+  display: block !important;
+}
