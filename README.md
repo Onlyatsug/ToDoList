@@ -1,1 +1,1 @@
-# Lista de tarefas com Javascript e Css puros!
+# Lista de tarefas com Javascript e Css.
